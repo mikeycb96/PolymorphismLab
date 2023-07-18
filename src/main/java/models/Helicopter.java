@@ -1,4 +1,6 @@
-public class Helicopter extends Vehicle{
+package models;
+
+public class Helicopter extends Vehicle {
 
     private boolean reservedForAirForce;
     private int numberOfPropellers;
