@@ -17,6 +17,23 @@ public class HelicopterTest {
         assertThat(helicopter.addWeaponMods(helicopter)).isEqualTo("Weapons added");
     }
 
+    @Test
+    public void canCalculateMargin(){
+        assertThat(helicopter.calculateMargin()).isEqualTo(750_000);
+    }
+
+    @Test
+    public void isReservedForAirForce(){
+        assertThat(helicopter.isReservedForAirForce()).isEqualTo(false);
+    }
+
+    @Test
+    public void canGetNumberOfPropellers(){
+        assertThat(helicopter.getNumberOfPropellers()).isEqualTo(3);
+    }
+
+
+
 
 
 

@@ -8,7 +8,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class DealershipTest {
 
     private Dealership dealership;
-    Vehicle m3;
+    Car m3;
 
     @BeforeEach
     public void setUP(){
@@ -45,8 +45,8 @@ public class DealershipTest {
     }
 
     @Test
-    public void canGetVehicles(){
-        assertThat(dealership.getVehicles().size()).isEqualTo(dealership.countVehicles());
+    public void canGetStock(){
+        assertThat(dealership.getStock().size()).isEqualTo(dealership.countVehicles());
 
     }
 

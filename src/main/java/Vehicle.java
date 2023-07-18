@@ -17,18 +17,33 @@ public abstract class Vehicle {
     }
 
 
-    public double calculateMargin(){
-        return this.sellPrice - this.cost;
-    }
+    public abstract double calculateMargin();
 
     public double getSellPrice(){
         return this.sellPrice;
 
     }
 
-    public String getTopSpeed(){
-        return "This vehicle has a top speed of 130mph";
+    public double getCost(){
+        return this.cost;
     }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public String getManufacturer(){
+        return this.manufacturer;
+    }
+
+    public int getMaximumOccupancy(){
+        return this.maximumOccupancy;
+    }
+
+    public String getTopSpeed(){
+        return this.topSpeed;
+    }
+
 
 
 

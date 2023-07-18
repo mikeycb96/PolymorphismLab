@@ -2,31 +2,31 @@ import java.util.ArrayList;
 
 public class Dealership {
 
-    private ArrayList<Vehicle> vehicles;
+    private ArrayList<Vehicle> stock;
     private double till;
 
 
     public Dealership() {
-        this.vehicles = new ArrayList<>();
+        this.stock = new ArrayList<>();
         this.till = 0;
     }
 
     public int countVehicles() {
-        return this.vehicles.size();
+        return this.stock.size();
     }
 
     public void addVehicles(Vehicle vehicle) {
-        this.vehicles.add(vehicle);
+        this.stock.add(vehicle);
     }
 
     public void sellVehicle(Vehicle vehicle) {
-        this.vehicles.remove(vehicle);
+        this.stock.remove(vehicle);
     }
 
     public void addToTill(Vehicle vehicle){
         double price = 0;
-        for (int i = 0; i < vehicles.size(); i++) {
-            if (vehicles.get(i).equals(vehicle))
+        for (int i = 0; i < stock.size(); i++) {
+            if (stock.get(i).equals(vehicle))
                this.till += vehicle.getSellPrice();
 
         }
@@ -38,8 +38,8 @@ public class Dealership {
 
     }
 
-    public ArrayList<Vehicle> getVehicles(){
-        return this.vehicles;
+    public ArrayList<Vehicle> getStock(){
+        return this.stock;
     }
 
 
